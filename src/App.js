@@ -38,11 +38,7 @@ const App = () => {
           {itemsList.map((itemList) => (
             <li key={itemList.key} className="todo-items">
               {itemList.text}
-              <a
-                className="delete"
-                href="#"
-                onClick={() => removeTodo(itemList.key)}
-              >
+              <a className="delete" onClick={() => removeTodo(itemList.key)}>
                 X
               </a>
             </li>
