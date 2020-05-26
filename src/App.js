@@ -5,22 +5,22 @@ const App = () => {
   const [newTodo, setNewTodo] = useState("");
   const [itemsList, setItemsList] = useState([
     { key: 1, text: "Watering plants" },
-    { key: 2, text: "Do Yoga" }
+    { key: 2, text: "Do Yoga" },
   ]);
 
-  const updateNewTodo = e => {
+  const updateNewTodo = (e) => {
     setNewTodo(e.target.value);
   };
 
-  const getNewTodo = e => {
+  const getNewTodo = (e) => {
     e.preventDefault();
     if (newTodo === "") return;
     setItemsList([{ key: Date.now(), text: newTodo }, ...itemsList]);
     e.target.reset();
   };
 
-  const removeTodo = key => {
-    setItemsList(itemsList.filter(itemList => itemList.key != key));
+  const removeTodo = (key) => {
+    setItemsList(itemsList.filter((itemList) => itemList.key !== key));
   };
 
   return (
@@ -35,7 +35,7 @@ const App = () => {
           Add
         </button>
         <ul className="todo-list">
-          {itemsList.map(itemList => (
+          {itemsList.map((itemList) => (
             <li key={itemList.key} className="todo-items">
               {itemList.text}
               <a

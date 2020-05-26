@@ -1,57 +1,70 @@
 body {
-  background-color: darkseagreen;
+  min-height: 100vh;
+  background-image: url("./image/backgroundimg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .App {
-  background-color: darkviolet;
-  min-height: 500px;
+  background: rgb(3, 3, 3, 0.5);
   width: 350px;
-  margin: 80px auto;
-  border-radius: 10px;
+  min-height: 500px;
+  margin: 80px 120px;
+  border-radius: 5px;
 }
 .submit-bar {
-  background-color: deeppink;
+  background-color: rgb(89, 207, 89);
+  color: black;
+  font-weight: 800;
+  font-size: larger;
   width: 200px;
   min-height: 50px;
   border: none;
   outline: none;
   font-size: 20px;
   padding: 10px;
-  color: beige;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .submit-bar::placeholder {
-  color: beige;
+  color: black;
+  font-weight: 600;
 }
 .submit-btn {
-  background-color: tomato;
+  background-color: rgb(46, 156, 46);
+  font-weight: 600;
+  color: black;
   border: none;
   outline: none;
   width: 80px;
   min-height: 65px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 20px;
-  color: beige;
   cursor: pointer;
 }
 .todo-list {
   list-style-type: none;
   font-size: 20px;
+  font-weight: bold;
   padding: 1em;
+  width: 320px;
 }
 .todo-items {
-  background-color: plum;
+  background-color: white;
+  color: green;
   display: flex;
   text-align: left;
   padding: 5px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .delete {
   text-decoration: none;
   margin-left: auto;
-  /* background-color: teal; */
   opacity: 0.5;
+  font-weight: bolder;
+  color: green;
 }
 a:hover {
   opacity: 0.9;
